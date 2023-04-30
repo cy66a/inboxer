@@ -1,0 +1,67 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.95);
+	padding: 1rem;
+	border-radius: 4px;
+	font-size: 1.6rem;
+	color: $primary;
+
+	&--sm {
+		flex: 0 1 20rem;
+	}
+
+	&--md {
+		flex: 0 1 30.5rem;
+	}
+
+	&__image-wrapper {
+		overflow: hidden;
+
+		&--sm {
+			height: 14rem;
+		}
+ 
+		&--md {
+			height: 17rem;
+		}
+	}
+
+	&__image {
+		max-width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+
+	&__text {
+		height: 6rem;
+		text-align: center;
+		margin: 0 0 1rem 0;
+	}
+
+	&__price {
+		margin: 0 0 1rem 0;
+	}
+
+	&__price-previous {
+		color: $grey;
+		text-decoration-line: line-through;
+		margin: 0 3rem 0 0;
+	}
+
+	&__price-current {
+		color: $primary;
+		font-size: 2.4rem;
+		font-weight: 700;
+	}
+
+	&__content {
+		display: flex;
+		gap: 1rem;
+	}
+
+	&__rating {
+		margin: 0 0 1rem 0;
+	}
+}

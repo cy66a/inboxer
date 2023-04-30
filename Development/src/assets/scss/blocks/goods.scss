@@ -1,0 +1,27 @@
+.goods {
+  padding: 3rem 0 4rem 0;
+
+  @include breakpoint($tablet-bp) {
+  }
+
+  &__title {
+    @include adaptiv-font(32, 24);
+    text-align: center;
+    margin: 0 0 2rem 0;
+
+    @include breakpoint($mobile-bp) {
+    }
+  }
+
+  &__catalog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    &--sm {
+      margin: 0 0 1rem 0;
+    }
+  }
+}

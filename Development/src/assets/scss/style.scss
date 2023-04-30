@@ -1,0 +1,37 @@
+@import "vars";
+@import "mixins";
+@import "vendor/reset";
+@import "vendor/reset-frilanser";
+@import "settings";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: $primary;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.33;
+  color: $white;
+
+  &._lock,
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  background: url("../images/bg.jpg") top center / contain no-repeat;
+}
+
+/* Blocks */
+@import "blocks/container";
+@import "blocks/buttons";
+@import "blocks/header";
+@import "blocks/menu";
+@import "blocks/goods";
+@import "blocks/card";
+@import "blocks/promo";
+@import "blocks/social";
+@import "blocks/footer";

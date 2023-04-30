@@ -1,0 +1,30 @@
+.footer {
+	padding: 0 0 3rem 0;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		line-height: 1.2;
+	}
+
+	&__title {
+		color: rgba($color: $white, $alpha: 0.5);
+		font-size: 1.3rem;
+		margin: 0 0 0.5rem 0;
+	}
+
+	&__phone {
+		color: $white;
+	}
+
+	&__mail {
+		color: $white;
+		text-decoration: underline;
+	}
+}

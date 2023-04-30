@@ -1,0 +1,34 @@
+.social {
+	padding: 3rem 0 3rem 0;
+
+	&__title {
+		font-size: 1.6rem;
+		margin: 0 0 2rem 0;
+		text-align: center;
+	}
+
+	&__block {
+		display: flex;
+		justify-content: center;
+		gap: 2rem;
+	}
+
+	&__link {
+		transition: transform 0.2s linear;
+
+		&:hover {
+			transform: translateY(-5px);
+		}
+
+		&:focus {
+			outline: 1px dashed $white;
+			outline-offset: .1rem;
+			border-radius: 50%;
+		}
+	}
+
+	&__image {
+		width: 6.8rem;
+		height: 6.8rem;
+	}
+}

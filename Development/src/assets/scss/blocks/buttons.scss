@@ -1,0 +1,30 @@
+.button {
+  // display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 18rem;
+  width: 100%;
+  line-height: 1;
+  letter-spacing: 0.96px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 4rem;
+  border-radius: 4px;
+  padding: 1rem 1.2rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: $white;
+  background: linear-gradient(87.23deg, rgba(128, 26, 179, 0) -91.42%, #4c4cff 99.79%);
+
+  &:focus {
+    outline: 1px dashed $primary;
+    outline-offset: .1rem;
+  }
+
+  &:hover {
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+
+  }
+}
